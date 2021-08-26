@@ -16,8 +16,8 @@ class DbListener : Listener {
         val vp = KPlayer(p.uniqueId, p.name)
         Bukkit.getScheduler().runTaskAsynchronously(KPlugin.instance) {
             vp.load()
-            vp.register()
         }
+        vp.register()
     }
 
     @EventHandler
