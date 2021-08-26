@@ -25,7 +25,7 @@
             <artifactId>server</artifactId>
             <version>1.8.8-R0.2-SNAPSHOT</version>
             <scope>system</scope>
-            <systemPath>C:/Users/Ilja/Desktop/dev/libs/PaperSpigot-1.8.8-R0.1-SNAPSHOT-latest (1).jar</systemPath>
+            <systemPath>${project.basedir}/libs/PaperSpigot-1.8.8-R0.1-SNAPSHOT-latest (1).jar</systemPath>
         </dependency>
 
         <dependency>
