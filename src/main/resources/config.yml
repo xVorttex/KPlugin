@@ -1,0 +1,21 @@
+#=----=----=----=
+# MySQL DATABASE
+#=----=----=----=
+SQL:
+   HOST: localhost
+   PORT: 3306
+   AUTH_ENABLED: true
+   DATABASE: test
+   USERNAME: root
+   PASSWORD:
+
+#=----=----=----=
+# MONGO DATABASE
+#=----=----=----=
+MONGO:
+   HOST: localhost
+   PORT: 27017
+   AUTH_ENABLED: false
+   DATABASE: admin
+   USERNAME: root
+   PASSWORD: 
