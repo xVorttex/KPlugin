@@ -12,7 +12,7 @@ class DbListener : Listener {
 
     @EventHandler
     fun onJoin(e: PlayerJoinEvent) {
-        val p = e.player;
+        val p = e.player
         val vp = KPlayer(p.uniqueId, p.name)
         Bukkit.getScheduler().runTaskAsynchronously(KPlugin.instance) {
             vp.load()
