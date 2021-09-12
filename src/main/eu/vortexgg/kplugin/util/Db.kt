@@ -18,7 +18,6 @@ sealed class Db {
         init {
             val builder = MongoClientSettings.builder()
             builder.applyConnectionString(ConnectionString("mongodb://$host:$port"))
-            builder.applyToConnectionPoolSettings { pool -> pool.maxConnectionIdleTime(60, TimeUnit.SECONDS) }
             if(authEnabled)
                 builder.credential(MongoCredential.createCredential(username, database, password.toCharArray()))
             client = MongoClients.create(builder.build())
